@@ -9,5 +9,5 @@ Each iteration of the sort is printed to for the user to see.
 Technologies Used:
 
 Kotlin
-Android Studio
 
+Android Studio
