@@ -6,11 +6,11 @@ class SortingAlgorithms {
         var swapCount:Int
 
         do {
-            swapCount = SortArray(userArray)
+            swapCount = BubbleSortSinglePass(userArray)
         }while (swapCount > 0)
     }
 
-    fun SortArray(sortArray: IntArray):Int{
+    fun BubbleSortSinglePass(sortArray: IntArray):Int{
         var swapCount = 0
 
         for (i in (sortArray.size - 1) downTo 1){
