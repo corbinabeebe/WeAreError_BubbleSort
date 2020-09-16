@@ -6,6 +6,15 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.EditText
+import android.widget.TextView
+
+
+//var userEntryTextView
+//var sortedTextView
+//var sortButton
+
+//var userArray: IntArray
 
 class MainActivity : AppCompatActivity() {
 

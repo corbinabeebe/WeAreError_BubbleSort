@@ -2,16 +2,25 @@ package com.example.weareerror_bubblesort
 
 class SortingAlgorithms {
 
-    fun BubbleSort(userArray: IntArray) {
-        var swapCount:Int
+    fun bubbleSort(userArray: IntArray): List<IntArray> {
+        var userArraySize = userArray.size
 
-        do {
-            swapCount = BubbleSortSinglePass(userArray)
-        }while (swapCount > 0)
+        //added user entered array to list
+        var sortedList = mutableListOf(userArray)
+
+        for(i in 0 until userArraySize - 1) {
+
+            //sorts array with one pass
+            bubbleSortSinglePass(userArray)
+
+            //adds newly sorted array to list
+            sortedList.add(userArray)
+        }
+
+        return sortedList
     }
 
-    fun BubbleSortSinglePass(sortArray: IntArray):Int{
-        var swapCount = 0
+    private fun bubbleSortSinglePass(sortArray: IntArray) {
 
         for (i in (sortArray.size - 1) downTo 1){
             if (sortArray[i] < sortArray[i - 1] ){
@@ -20,12 +29,8 @@ class SortingAlgorithms {
 
                 sortArray[i] = higherValue
                 sortArray[i - 1] = lowerValue
-
-                swapCount++
             }
         }
-
-        return swapCount
     }
 
 }
