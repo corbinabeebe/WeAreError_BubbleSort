@@ -2,11 +2,11 @@ package com.example.weareerror_bubblesort
 
 class SortingAlgorithms {
 
-    fun bubbleSort(userArray: IntArray): List<IntArray> {
+    fun bubbleSort(userArray: IntArray): List<String> {
         var userArraySize = userArray.size
 
         //added user entered array to list
-        var sortedList = mutableListOf(userArray)
+        var sortedList = mutableListOf(userArray.joinToString { it -> it. })
 
         for(i in 0 until userArraySize - 1) {
 
@@ -14,7 +14,9 @@ class SortingAlgorithms {
             bubbleSortSinglePass(userArray)
 
             //adds newly sorted array to list
-            sortedList.add(userArray)
+            sortedList.add(userArray.joinToString { " " })
+
+
         }
 
         return sortedList
