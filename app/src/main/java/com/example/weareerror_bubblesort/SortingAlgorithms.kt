@@ -6,7 +6,7 @@ class SortingAlgorithms {
         var userArraySize = userArray.size
 
         //added user entered array to list
-        var sortedList = mutableListOf(userArray.joinToString { it -> it. })
+        var sortedList = mutableListOf(userArray.joinToString { " "})
 
         for(i in 0 until userArraySize - 1) {
 
