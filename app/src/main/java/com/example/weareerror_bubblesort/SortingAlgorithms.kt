@@ -1,31 +1,43 @@
 package com.example.weareerror_bubblesort
 
-class SortingAlgorithms {
+fun bubbleSortArray (inputArray: IntArray): String{
+    val bubbleSort = BubbleSort()
 
-    fun BubbleSort(userArray: IntArray) {
-        var swapCount:Int
+    return bubbleSort.sort(inputArray)
+}
 
-        do {
-            swapCount = BubbleSortSinglePass(userArray)
-        }while (swapCount > 0)
+class BubbleSort {
+    // Output a string with one line for each sort iteration.
+    fun sort(arrayToSort: IntArray): String{
+        var sortOutput = arrayToSort.joinToString(" ")
+
+//      Continue sorting until there are no swaps.
+        while (bubbleDown(arrayToSort)){
+            sortOutput += "\n" + arrayToSort.joinToString(separator = " ")
+        }
+
+        return sortOutput
     }
 
-    fun BubbleSortSinglePass(sortArray: IntArray):Int{
-        var swapCount = 0
+    private fun bubbleDown(arrayToSort: IntArray): Boolean{
+        var swappedValues = false
+        var lowerValue: Int
+        var higherValue: Int
 
-        for (i in (sortArray.size - 1) downTo 1){
-            if (sortArray[i] < sortArray[i - 1] ){
-                val lowerValue = sortArray[i]
-                val higherValue = sortArray[i - 1]
+//      Starting at the back of array swap adjacent values if the value on the right is less than the value on the left.
+//      Note: to optimize this you would decrement the starting position by one on each call.
+        for (i in (arrayToSort.size - 1) downTo 1){
+            if (arrayToSort[i] < arrayToSort[i - 1] ){
+                lowerValue = arrayToSort[i]
+                higherValue = arrayToSort[i - 1]
 
-                sortArray[i] = higherValue
-                sortArray[i - 1] = lowerValue
+                arrayToSort[i] = higherValue
+                arrayToSort[i - 1] = lowerValue
 
-                swapCount++
+                swappedValues = true
             }
         }
 
-        return swapCount
+        return swappedValues
     }
-
 }
