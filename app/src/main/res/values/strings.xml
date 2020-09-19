@@ -13,5 +13,6 @@
     <string name="second_iteration">First Iteration</string>
     <string name="third_iteration">First Iteration</string>
     <string name="fourth_iteration">First Iteration</string>
+    <string name="userInstructions">Enter a series of 3 to 8 digits! Using numbers ONLY!!</string>
 
 </resources>
