@@ -4,7 +4,7 @@ import org.junit.Test
 
 import org.junit.Assert.*
 
-val sort = SortingAlgorithms()
+val sort = BubbleSort()
 
 class SortingAlgorithmsTest {
     @Test
