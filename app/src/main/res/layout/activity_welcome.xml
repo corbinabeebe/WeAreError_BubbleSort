@@ -9,19 +9,6 @@
     android:visibility="visible"
     tools:context=".WelcomeActivity">
 
-<!--    <ImageView-->
-<!--        android:id="@+id/bubbleImageView"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_marginTop="@dimen/bubbleImageViewConstraint"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.0"-->
-<!--        app:srcCompat="@drawable/bubbles_vertical" />-->
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="310dp"
@@ -59,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/startButton"
+        android:id="@+id/getStartedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
