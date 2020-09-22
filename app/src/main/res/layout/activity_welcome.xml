@@ -7,25 +7,26 @@
     android:layout_height="match_parent"
     android:contentDescription="@string/bubbleImageDescription"
     android:visibility="visible"
-    tools:context=".MainActivity">
+    tools:context=".WelcomeActivity">
 
-    <ImageView
-        android:id="@+id/bubbleImageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="@dimen/bubbleImageViewConstraint"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/bubbles_vertical" />
+<!--    <ImageView-->
+<!--        android:id="@+id/bubbleImageView"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="@dimen/bubbleImageViewConstraint"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        app:srcCompat="@drawable/bubbles_vertical" />-->
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="310dp"
         android:layout_height="103dp"
+        android:background="@color/colorPrimaryDark"
         android:contentDescription="@string/applicationTitleDescription"
         android:text="@string/appTitle"
         android:textAlignment="center"
@@ -38,37 +39,40 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011"
+        app:layout_constraintVertical_bias="0.191"
         tools:text="@string/appTitle" />
 
     <TextView
         android:id="@+id/appDescriptionTextView"
         android:layout_width="280dp"
-        android:layout_height="68dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="156dp"
         android:background="@color/colorPrimary"
         android:text="@string/appDescription"
         android:textAlignment="center"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/startButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/bubbleImageView"
-        app:layout_constraintTop_toTopOf="@+id/bubbleImageView"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/startButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimaryDark"
         android:text="@string/startButtonText"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/bubbleImageView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/bubbleImageView" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appDescriptionTextView"
+        app:layout_constraintVertical_bias="0.847" />
 </androidx.constraintlayout.widget.ConstraintLayout>
