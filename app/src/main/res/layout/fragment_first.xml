@@ -10,11 +10,11 @@
         android:id="@+id/sortedTextView"
         android:layout_width="352dp"
         android:layout_height="249dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/userEntryTextView"
-        tools:layout_editor_absoluteY="156dp" />
+        app:layout_constraintTop_toBottomOf="@id/userEntryTextView" />
 
     <Button
         android:id="@+id/sortButton"
@@ -28,11 +28,14 @@
         app:layout_constraintTop_toBottomOf="@id/sortedTextView"
         app:layout_constraintVertical_bias="0.147" />
 
-    <NumberPicker
+    <TextView
         android:id="@+id/userEntryTextView"
         android:layout_width="241dp"
         android:layout_height="26dp"
-        android:text="Enter Digits"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="56dp"
+        android:text="@string/enterDigits"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/sortedTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

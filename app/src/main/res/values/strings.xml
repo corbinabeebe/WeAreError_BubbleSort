@@ -14,5 +14,11 @@
     <string name="third_iteration">First Iteration</string>
     <string name="fourth_iteration">First Iteration</string>
     <string name="userInstructions">Enter a series of 3 to 8 digits! Using numbers ONLY!!</string>
+    <string name="enterDigits">Enter Digits</string>
+    <string name="bubbleImageDescription">Image of bubbles</string>
+    <string name="appTitle">WeAreError Bubble Sort</string>
+    <string name="applicationTitleDescription">applicationTitle</string>
+    <string name="startButtonText">Get Started</string>
+    <string name="appDescription">Sort an array of integers using BubbleSort</string>
 
 </resources>
