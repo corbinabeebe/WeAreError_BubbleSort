@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_welcome.*
 //var sortedTextView
 //var userArray: IntArray
 
-class WelcomeActivity : AppCompatActivity() {
+class WelcomeActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
