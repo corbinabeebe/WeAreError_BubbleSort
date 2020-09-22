@@ -15,6 +15,9 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
+
+        //onclick listener that grabs the intent and starts the sorting activity
+        //used to move from the welcome page to the sort page
         getStartedButton.setOnClickListener {
             val sortIntent = Intent(this, SortActivity:: class.java)
             startActivity(sortIntent)
