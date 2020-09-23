@@ -16,6 +16,7 @@ class SortActivity : BaseActivity() {
         sortArrayButton.setOnClickListener {
 
             //collect user input
+            var errors = ""
             var userInput = userEntryTextInput.text
 
             //validate if all characters in user input are in validNumbers
