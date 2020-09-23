@@ -19,7 +19,6 @@ class SortActivity : BaseActivity() {
             var userInput = userEntryTextInput.text
 
             //validate if all characters in user input are in validNumbers
-
             //if characters are not in validNumbers, toast to screen and have user re-enter number
 
 
