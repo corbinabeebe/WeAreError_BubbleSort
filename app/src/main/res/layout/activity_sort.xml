@@ -6,6 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".SortActivity">
 
+    <ImageView
+        android:id="@+id/bubbleImageView"
+        android:layout_width="410dp"
+        android:layout_height="768dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="5dp"
+        android:alpha=".7"
+        android:contentDescription="@string/backgroundDescription"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/bubble_foreground" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/userEntryLayout"
         android:layout_width="match_parent"
@@ -23,14 +39,16 @@
             android:id="@+id/userEntryTextInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
             android:hint="@string/enterDigits"
-            android:inputType="phone"/>
+            android:inputType="phone" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/sortedTextView"
         android:layout_width="352dp"
         android:layout_height="249dp"
+        android:background="@color/colorPrimaryDark"
         android:scrollbarAlwaysDrawVerticalTrack="false"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="40dp"
-            android:background="@color/colorPrimaryDark"
+            android:background="@drawable/my_button_bckgrnd"
             android:contentDescription="@string/sortButtonDesc"
             android:text="@string/sort"
             android:textAlignment="center"

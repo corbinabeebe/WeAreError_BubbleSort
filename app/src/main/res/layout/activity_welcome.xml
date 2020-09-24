@@ -9,10 +9,26 @@
     android:visibility="visible"
     tools:context=".WelcomeActivity">
 
+    <ImageView
+        android:id="@+id/bubbleImageView"
+        android:layout_width="410dp"
+        android:layout_height="768dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="5dp"
+        android:alpha=".7"
+        android:contentDescription="@string/backgroundDescription"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/bubble_foreground" />
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="310dp"
-        android:layout_height="103dp"
+        android:layout_width="307dp"
+        android:layout_height="110dp"
         android:background="@color/colorPrimaryDark"
         android:contentDescription="@string/applicationTitleDescription"
         android:text="@string/appTitle"
@@ -52,10 +68,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/startButtonText"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="18sp"
+        android:background="@drawable/my_button_bckgrnd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

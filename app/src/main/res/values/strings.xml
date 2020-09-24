@@ -21,5 +21,6 @@
     <string name="startButtonText">Get Started</string>
     <string name="appDescription">Sort an array of integers using BubbleSort</string>
     <string name="sortButtonDesc">Click to sort the array</string>
+    <string name="backgroundDescription">background image of bubbles</string>
 
 </resources>
