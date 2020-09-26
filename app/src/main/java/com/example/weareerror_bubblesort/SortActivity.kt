@@ -1,6 +1,6 @@
 package com.example.weareerror_bubblesort
 
-
+import android.util.Log
 import android.content.Context
 import android.os.Bundle
 import android.widget.Toast
@@ -46,13 +46,9 @@ class SortActivity : BaseActivity() {
 
             //if errors is empty, perform bubble sort and set sortedTextView with result
             if (errors.isEmpty()) {
-
                 val bubble = BubbleSort()
-                var result = ""
-                val userArray = bubble.stringToIntArray(userInput.toString())
-
-               result = bubble.sort(userArray)
-
+                val numbers = userInput.map { it.toString().toInt() }
+                val result = bubble.sort(numbers.toIntArray())
                 sortedTextView.text = result
             }
             //set toast with errors
