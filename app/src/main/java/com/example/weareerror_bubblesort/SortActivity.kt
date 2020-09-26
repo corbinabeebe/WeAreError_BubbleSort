@@ -21,7 +21,6 @@ class SortActivity : BaseActivity() {
         //on-click listener for the sort button.
         sortArrayButton.setOnClickListener {
 
-
             //collect user input
             var errors = ""
             val userInput = userEntryTextInput.text
@@ -29,26 +28,33 @@ class SortActivity : BaseActivity() {
 
             //validate if the user entered the correct amount of digits
             if (userInput == null  || userInput.isEmpty()) {
-               errors += "You did not enter any digits\n"
+               errors += "\nYou did not enter any digits"
             } else if (inputLength!! > 0 && inputLength < 3) {
-                errors += "Please enter at least 3 digits\n"
+                errors += "\nEnter at least 3 digits"
             } else if(inputLength > 8) {
-                errors += "Please enter no more than 8 digits\n"
+                errors += "\nEnter no more than 8 digits"
             }
 
             //validate if all characters in user input are in validNumbers
             // if characters are not in validNumbers, toast to screen and have user re-enter number
-            for (i in 0 until inputLength!!.minus(1)) {
+            for (i in 0 until inputLength!!) {
                 if (!validNumbers.contains(userInput[i].toString())) {
-                    errors += "Please use only digits 0 through 9"
+                    errors += "\nUse only digits 0 through 9"
                     break
                 }
             }
 
-
             //if errors is empty, perform bubble sort and set sortedTextView with result
             if (errors.isEmpty()) {
+
                 // TODO: 9/23/2020 perform bubble sort and add result to sortedTextView
+                val bubble = BubbleSort()
+                var result = ""
+                val userArray = bubble.stringToIntArray(userInput.toString())
+
+                result = bubble.sort(userArray)
+
+                sortedTextView.text = result
             }
             //set toast with errors
             else {

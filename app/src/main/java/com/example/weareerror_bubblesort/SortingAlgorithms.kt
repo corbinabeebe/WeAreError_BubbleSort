@@ -8,7 +8,7 @@ fun bubbleSortArray (inputArray: IntArray): String{
 
 class BubbleSort {
     // Output a string with one line for each sort iteration.
-    fun sort(arrayToSort: IntArray): String{
+    fun sort(arrayToSort: IntArray): String {
         var sortOutput = arrayToSort.joinToString(" ")
 
 //      Continue sorting until there are no swaps.
@@ -41,7 +41,14 @@ class BubbleSort {
         return swappedValues
     }
 
-    fun bubbleSort(intArrayOf: IntArray) {
+    //function to convert string to IntArray
+    fun stringToIntArray(userInputString: String): IntArray {
+        var result = intArrayOf(userInputString.length)
 
+        for (i in userInputString.indices) {
+            result[i] = userInputString[i].toInt()
+        }
+
+        return result
     }
 }
