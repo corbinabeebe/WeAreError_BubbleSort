@@ -28,5 +28,10 @@ class Validations {
 
     }
 
+//    fun programValidations(userInput: String): Boolean {
+//
+//
+//    }
+
 
 }
