@@ -43,12 +43,11 @@ class BubbleSort {
 
     //function to convert string to IntArray
     fun stringToIntArray(userInputString: String): IntArray {
-        var result = intArrayOf(userInputString.length)
 
-        for (i in userInputString.indices) {
-            result[i] = userInputString[i].toInt()
+        val ints = IntArray(userInputString.length)
+        userInputString.indices.forEach {
+            ints[it] = userInputString[it].toInt()
         }
-
-        return result
+        return ints
     }
 }

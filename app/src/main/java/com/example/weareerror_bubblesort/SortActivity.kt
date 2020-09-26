@@ -47,12 +47,11 @@ class SortActivity : BaseActivity() {
             //if errors is empty, perform bubble sort and set sortedTextView with result
             if (errors.isEmpty()) {
 
-                // TODO: 9/23/2020 perform bubble sort and add result to sortedTextView
                 val bubble = BubbleSort()
                 var result = ""
                 val userArray = bubble.stringToIntArray(userInput.toString())
 
-                result = bubble.sort(userArray)
+               result = bubble.sort(userArray)
 
                 sortedTextView.text = result
             }
