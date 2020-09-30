@@ -21,6 +21,9 @@ class SortActivity : BaseActivity() {
         //on-click listener for the sort button.
         sortArrayButton.setOnClickListener {
 
+            //clear text view text
+            sortedTextView.text = ""
+
             //collect user input
             var errors = ""
             val userInput = userEntryTextInput.text
