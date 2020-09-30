@@ -7,13 +7,14 @@ fun bubbleSortArray (inputArray: IntArray): String{
 }
 
 class BubbleSort {
+
     // Output a string with one line for each sort iteration.
     fun sort(arrayToSort: IntArray): String {
-        var sortOutput = arrayToSort.joinToString(" ")
+        var sortOutput = "Input Array: " + arrayToSort.joinToString(" ") + "\n"
 
 //      Continue sorting until there are no swaps.
         while (bubbleDown(arrayToSort)){
-            sortOutput += "\n" + arrayToSort.joinToString(separator = " ")
+            sortOutput += "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" + arrayToSort.joinToString(separator = " ")
         }
 
         return sortOutput
